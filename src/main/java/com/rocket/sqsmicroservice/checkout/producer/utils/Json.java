@@ -1,16 +1,19 @@
 package com.rocket.sqsmicroservice.checkout.producer.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rocket.sqsmicroservice.checkout.producer.controller.CheckoutController;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
 @Component
-@Slf4j
 public class Json {
     private static final ObjectMapper objectMapper;
+    private static final Logger log = LoggerFactory.getLogger(Json.class);
 
     static {
         objectMapper = new ObjectMapper();

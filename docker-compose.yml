@@ -7,7 +7,7 @@ services:
     environment:
       - AWS_DEFAULT_REGION=us-east-1
       - EDGE_PORT=4566
-      - SERVICES=sqs
+      - SERVICES=sqs,s3
       - DEBUG=1
     ports:
       - "4566:4566"

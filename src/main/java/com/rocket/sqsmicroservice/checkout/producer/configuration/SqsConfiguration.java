@@ -31,5 +31,4 @@ public class SqsConfiguration {
     private AwsCredentialsProvider awsCredentialsProvider() {
         return StaticCredentialsProvider.create(AwsBasicCredentials.create(awsConfiguration.getAccessKey(), awsConfiguration.getSecretKey()));
     }
-
 }
