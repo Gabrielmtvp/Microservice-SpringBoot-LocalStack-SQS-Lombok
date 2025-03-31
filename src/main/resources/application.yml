@@ -3,6 +3,10 @@ localstack:
 aws:
   region: us-east-1
   sqs:
-    process-order-queue: http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/process-order-queue
+    process-order-queue: http://localhost:4566/000000000000/process-order-queue
+    processOrderQueueUrl: http://localhost:4566/000000000000/order-queue
+    inventoryUpdateQueueUrl: http://localhost:4566/000000000000/inventory-update-queue
+    paymentProcessingQueueUrl: http://localhost:4566/000000000000/payment-processing-queue
+    shippingNotificationQueueUrl: http://localhost:4566/000000000000/shipping-notification-queue
   access-key: test
   secret-key: test
